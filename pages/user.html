@@ -84,7 +84,7 @@
                       </div>
                       <div class="mb-4">
                         <div class="form-floating mb-3">
-                          <input type="text" class="form-control" id="name" placeholder="姓名" />
+                          <input type="text" class="form-control" id="name" placeholder="姓名" value="Mokumaru" />
                           <label for="name">姓名</label>
                         </div>
                       </div>
@@ -98,6 +98,7 @@
                               name="gender"
                               id="gender-female"
                               value="female"
+                              checked
                             />
                             <label class="form-check-label" for="gender-female">女性</label>
                           </div>
@@ -119,7 +120,13 @@
                       </div>
                       <div class="mb-4">
                         <div class="form-floating mb-3">
-                          <input type="date" class="form-control" id="birthdate" placeholder="生日" />
+                          <input
+                            type="date"
+                            class="form-control"
+                            id="birthdate"
+                            placeholder="生日"
+                            value="2000-01-10"
+                          />
                           <label for="birthdate">生日</label>
                         </div>
                       </div>
@@ -153,22 +160,17 @@
                               </div>
                               <div class="modal-body">
                                 <div class="form-floating mb-4">
-                                  <input
-                                    type="password"
-                                    class="form-control"
-                                    id="floatingPassword"
-                                    placeholder="新密碼"
-                                  />
-                                  <label for="floatingPassword">新密碼</label>
+                                  <input type="password" class="form-control" id="newPassword" placeholder="新密碼" />
+                                  <label for="newPassword">新密碼</label>
                                 </div>
                                 <div class="form-floating">
                                   <input
                                     type="password"
                                     class="form-control"
-                                    id="floatingPassword"
+                                    id="confirmPassword"
                                     placeholder="再次密碼"
                                   />
-                                  <label for="floatingPassword">再次密碼</label>
+                                  <label for="confirmPassword">再次密碼</label>
                                 </div>
                               </div>
                               <div class="modal-footer">
@@ -182,20 +184,38 @@
                       </div>
                       <div class="mb-4">
                         <div class="form-floating">
-                          <input type="email" class="form-control" id="email" placeholder="信箱" />
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="信箱"
+                            value="mokumaru@mail.com"
+                          />
                           <label for="email">信箱</label>
                         </div>
                         <p class="px-2">盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信</p>
                       </div>
                       <div class="mb-4">
                         <div class="form-floating mb-3">
-                          <input type="tel" class="form-control" id="phone" placeholder="連絡電話" />
+                          <input
+                            type="tel"
+                            class="form-control"
+                            id="phone"
+                            placeholder="連絡電話"
+                            value="09-1234-5678"
+                          />
                           <label for="phone">連絡電話</label>
                         </div>
                       </div>
                       <div>
                         <div class="form-floating">
-                          <input type="text" class="form-control" id="address" placeholder="地址" />
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="address"
+                            placeholder="地址"
+                            value="高雄市三民區九如一路 87 號"
+                          />
                           <label for="address">地址</label>
                         </div>
                       </div>
@@ -455,20 +475,20 @@
                               class="form-check-input"
                               type="radio"
                               name="income"
-                              id="income_below_30000"
+                              id="income-below-30000"
                               value="below-30000"
                             />
-                            <label class="form-check-label" for="income_below_30000">3 萬以下</label>
+                            <label class="form-check-label" for="income-below-30000">3 萬以下</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="radio"
                               name="income"
-                              id="income_30000_50000"
+                              id="income-30000-50000"
                               value="30000_50000"
                             />
-                            <label class="form-check-label" for="income_30000_50000">3-5 萬</label>
+                            <label class="form-check-label" for="income-30000-50000">3-5 萬</label>
                           </div>
 
                           <div class="form-check form-check-inline me-4">
@@ -476,40 +496,40 @@
                               class="form-check-input"
                               type="radio"
                               name="income"
-                              id="income_50000_80000"
+                              id="income-50000-80000"
                               value="50000_80000"
                             />
-                            <label class="form-check-label" for="income_50000_80000">5-8 萬</label>
+                            <label class="form-check-label" for="income-50000-80000">5-8 萬</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="radio"
                               name="income"
-                              id="income_80000_120000"
+                              id="income-80000-120000"
                               value="80000_120000"
                             />
-                            <label class="form-check-label" for="income_80000_120000">8-12 萬</label>
+                            <label class="form-check-label" for="income-80000-120000">8-12 萬</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="radio"
                               name="income"
-                              id="income_120000_200000"
+                              id="income-120000-200000"
                               value="120000_200000"
                             />
-                            <label class="form-check-label" for="income_120000_200000">12-20 萬</label>
+                            <label class="form-check-label" for="income-120000-200000">12-20 萬</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="radio"
                               name="income"
-                              id="income_above_200000"
+                              id="income-above-200000"
                               value="above_200000"
                             />
-                            <label class="form-check-label" for="income_above_200000">20 萬以上</label>
+                            <label class="form-check-label" for="income-above-200000">20 萬以上</label>
                           </div>
                         </div>
                       </div>
@@ -527,16 +547,16 @@
                       </div>
                       <div class="mb-4">
                         <div class="form-floating">
-                          <input type="text" class="form-control" id="works" placeholder="作品案例展示" />
-                          <label for="works">作品案例展示</label>
+                          <input type="text" class="form-control" id="project-demo" placeholder="作品案例展示" />
+                          <label for="project-demo">作品案例展示</label>
                         </div>
                       </div>
                       <div>
                         <p class="mb-2">附件檔案</p>
-                        <label class="btn border" for="fileUpload"
+                        <label class="btn border" for="file-upload"
                           ><span class="material-icons-outlined align-bottom"> file_upload </span>上傳檔案</label
                         >
-                        <input type="file" name="fileUpload" id="fileUpload" class="d-none" />
+                        <input type="file" name="fileUpload" id="file-upload" class="d-none" />
                       </div>
                     </div>
                   </div>
@@ -554,7 +574,7 @@
                         <div class="form-floating">
                           <textarea
                             class="form-control"
-                            placeholder="1 年短期職涯目標（最多 300 字）holddd"
+                            placeholder="1 年短期職涯目標（最多 300 字)"
                             id="career-goal-1y"
                             style="height: 160px"
                             maxlength="300"
@@ -630,8 +650,8 @@
                       </div>
                       <div class="mb-4">
                         <div class="form-floating mb-3">
-                          <input type="text" class="form-control" id="targetIncome" placeholder="目標薪資/收入" />
-                          <label for="targetIncome">目標薪資/收入</label>
+                          <input type="text" class="form-control" id="target-income" placeholder="目標薪資/收入" />
+                          <label for="target-income">目標薪資/收入</label>
                         </div>
                       </div>
                       <div class="mb-4">
@@ -641,73 +661,73 @@
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="careerChallenge-1"
-                              value="careerChallenge-1"
+                              id="career-challenge-1"
+                              value="career-challenge-1"
                             />
-                            <label class="form-check-label" for="careerChallenge-1">方向不明確</label>
+                            <label class="form-check-label" for="career-challenge-1">方向不明確</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="careerChallenge-2"
-                              value="careerChallenge-2"
+                              id="career-challenge-2"
+                              value="career-challenge-2"
                             />
-                            <label class="form-check-label" for="careerChallenge-2">技能需要提升</label>
+                            <label class="form-check-label" for="career-challenge-2">技能需要提升</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="careerChallenge-3"
-                              value="careerChallenge-3"
+                              id="career-challenge-3"
+                              value="career-challenge-3"
                             />
-                            <label class="form-check-label" for="careerChallenge-3">收入不穩定</label>
+                            <label class="form-check-label" for="career-challenge-3">收入不穩定</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="careerChallenge-4"
-                              value="careerChallenge-4"
+                              id="career-challenge-4"
+                              value="career-challenge-4"
                             />
-                            <label class="form-check-label" for="careerChallenge-4">客戶開發困難</label>
+                            <label class="form-check-label" for="career-challenge-4">客戶開發困難</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="careerChallenge-5"
-                              value="careerChallenge-5"
+                              id="career-challenge-5"
+                              value="career-challenge-5"
                             />
-                            <label class="form-check-label" for="careerChallenge-5">時間管理問題</label>
+                            <label class="form-check-label" for="career-challenge-5">時間管理問題</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="careerChallenge-6"
-                              value="careerChallenge-6"
+                              id="career-challenge-6"
+                              value="career-challenge-6"
                             />
-                            <label class="form-check-label" for="careerChallenge-6">工作生活失衡</label>
+                            <label class="form-check-label" for="career-challenge-6">工作生活失衡</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="careerChallenge-7"
-                              value="careerChallenge-7"
+                              id="career-challenge-7"
+                              value="career-challenge-7"
                             />
-                            <label class="form-check-label" for="careerChallenge-7">缺乏人脈資源</label>
+                            <label class="form-check-label" for="career-challenge-7">缺乏人脈資源</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="careerChallenge-8"
-                              value="careerChallenge-8"
+                              id="career-challenge-8"
+                              value="career-challenge-8"
                             />
-                            <label class="form-check-label" for="careerChallenge-8">其他(請說明)</label>
+                            <label class="form-check-label" for="career-challenge-8">其他(請說明)</label>
                           </div>
                         </div>
                       </div>
@@ -718,82 +738,82 @@
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="expectedSupport-1"
-                              value="expectedSupport-1"
+                              id="expected-support-1"
+                              value="expected-support-1"
                             />
-                            <label class="form-check-label" for="expectedSupport-1">職涯方向指導</label>
+                            <label class="form-check-label" for="expected-support-1">職涯方向指導</label>
                           </div>
                           <div class="form-check form-check-inline me-4 mb-2">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="expectedSupport-2"
-                              value="expectedSupport-2"
+                              id="expected-support-2"
+                              value="expected-support-2"
                             />
-                            <label class="form-check-label" for="expectedSupport-2">專業技能提升建議</label>
+                            <label class="form-check-label" for="expected-support-2">專業技能提升建議</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="expectedSupport-3"
-                              value="expectedSupport-3"
+                              id="expected-support-3"
+                              value="expected-support-3"
                             />
-                            <label class="form-check-label" for="expectedSupport-3">個人品牌建立</label>
+                            <label class="form-check-label" for="expected-support-3">個人品牌建立</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="expectedSupport-4"
-                              value="expectedSupport-4"
+                              id="expected-support-4"
+                              value="expected-support-4"
                             />
-                            <label class="form-check-label" for="expectedSupport-4">接案策略與定價</label>
+                            <label class="form-check-label" for="expected-support-4">接案策略與定價</label>
                           </div>
                           <div class="form-check form-check-inline me-4 mb-2">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="expectedSupport-5"
-                              value="expectedSupport-5"
+                              id="expected-support-5"
+                              value="expected-support-5"
                             />
-                            <label class="form-check-label" for="expectedSupport-5">客戶開發方法</label>
+                            <label class="form-check-label" for="expected-support-5">客戶開發方法</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="expectedSupport-6"
-                              value="expectedSupport-6"
+                              id="expected-support-6"
+                              value="expected-support-6"
                             />
-                            <label class="form-check-label" for="expectedSupport-6">財務規劃</label>
+                            <label class="form-check-label" for="expected-support-6">財務規劃</label>
                           </div>
                           <div class="form-check form-check-inline me-4 mb-2">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="expectedSupport-7"
-                              value="expectedSupport-7"
+                              id="expected-support-7"
+                              value="expected-support-7"
                             />
-                            <label class="form-check-label" for="expectedSupport-7">時間管理系統</label>
+                            <label class="form-check-label" for="expected-support-7">時間管理系統</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="expectedSupport-8"
-                              value="expectedSupport-8"
+                              id="expected-support-8"
+                              value="expected-support-8"
                             />
-                            <label class="form-check-label" for="expectedSupport-8">工作生活平衡</label>
+                            <label class="form-check-label" for="expected-support-8">工作生活平衡</label>
                           </div>
                           <div class="form-check form-check-inline me-4 mb-2">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="expectedSupport-9"
-                              value="expectedSupport-9"
+                              id="expected-support-9"
+                              value="expected-support-9"
                             />
-                            <label class="form-check-label" for="expectedSupport-9">其他(請說明)</label>
+                            <label class="form-check-label" for="expected-support-9">其他(請說明)</label>
                           </div>
                         </div>
                       </div>
@@ -804,28 +824,28 @@
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="interestedPlans-1"
-                              value="interestedPlans-1"
+                              id="interested-plans-1"
+                              value="interested-plans-1"
                             />
-                            <label class="form-check-label" for="interestedPlans-1">探索定位</label>
+                            <label class="form-check-label" for="interested-plans-1">探索定位</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="interestedPlans-2"
-                              value="interestedPlans-2"
+                              id="interested-plans-2"
+                              value="interested-plans-2"
                             />
-                            <label class="form-check-label" for="interestedPlans-2">客製化方案</label>
+                            <label class="form-check-label" for="interested-plans-2">客製化方案</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="interestedPlans-3"
-                              value="interestedPlans-3"
+                              id="interested-plans-3"
+                              value="interested-plans-3"
                             />
-                            <label class="form-check-label" for="interestedPlans-3">實戰指導</label>
+                            <label class="form-check-label" for="interested-plans-3">實戰指導</label>
                           </div>
                         </div>
                       </div>
@@ -846,92 +866,92 @@
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="coreExpertise-1"
-                              value="coreExpertise-1"
+                              id="core-expertise-1"
+                              value="core-expertise-1"
                             />
-                            <label class="form-check-label" for="coreExpertise-1">設計/創意</label>
+                            <label class="form-check-label" for="core-expertise-1">設計/創意</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="coreExpertise-2"
-                              value="coreExpertise-2"
+                              id="core-expertise-2"
+                              value="core-expertise-2"
                             />
-                            <label class="form-check-label" for="coreExpertise-2">科技/程式開發</label>
+                            <label class="form-check-label" for="core-expertise-2">科技/程式開發</label>
                           </div>
 
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="coreExpertise-3"
-                              value="coreExpertise-3"
+                              id="core-expertise-3"
+                              value="core-expertise-3"
                             />
-                            <label class="form-check-label" for="coreExpertise-3">行銷/公關</label>
+                            <label class="form-check-label" for="core-expertise-3">行銷/公關</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="coreExpertise-4"
-                              value="coreExpertise-4"
+                              id="core-expertise-4"
+                              value="core-expertise-4"
                             />
-                            <label class="form-check-label" for="coreExpertise-4">內容創作/寫作</label>
+                            <label class="form-check-label" for="core-expertise-4">內容創作/寫作</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="coreExpertise-5"
-                              value="coreExpertise-5"
+                              id="core-expertise-5"
+                              value="core-expertise-5"
                             />
-                            <label class="form-check-label" for="coreExpertise-5"> 顧問/諮詢</label>
+                            <label class="form-check-label" for="core-expertise-5"> 顧問/諮詢</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="coreExpertise-6"
-                              value="coreExpertise-6"
+                              id="core-expertise-6"
+                              value="core-expertise-6"
                             />
-                            <label class="form-check-label" for="coreExpertise-6">商業/管理</label>
+                            <label class="form-check-label" for="core-expertise-6">商業/管理</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="coreExpertise-7"
-                              value="coreExpertise-7"
+                              id="core-expertise-7"
+                              value="core-expertise-7"
                             />
-                            <label class="form-check-label" for="coreExpertise-7">財務/會計</label>
+                            <label class="form-check-label" for="core-expertise-7">財務/會計</label>
                           </div>
                           <div class="form-check form-check-inline me-4 mb-2">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="coreExpertise-8"
-                              value="coreExpertise-8"
+                              id="core-expertise-8"
+                              value="core-expertise-8"
                             />
-                            <label class="form-check-label" for="coreExpertise-8">教育/培訓</label>
+                            <label class="form-check-label" for="core-expertise-8">教育/培訓</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="coreExpertise-9"
-                              value="coreExpertise-9"
+                              id="core-expertise-9"
+                              value="core-expertise-9"
                             />
-                            <label class="form-check-label" for="coreExpertise-9">法律/合規</label>
+                            <label class="form-check-label" for="core-expertise-9">法律/合規</label>
                           </div>
                           <div class="form-check form-check-inline me-4">
                             <input
                               class="form-check-input"
                               type="checkbox"
-                              id="coreExpertise-10"
-                              value="coreExpertise-10"
+                              id="core-expertise-10"
+                              value="core-expertise-10"
                             />
-                            <label class="form-check-label" for="coreExpertise-10">健康/醫療</label>
+                            <label class="form-check-label" for="core-expertise-10">健康/醫療</label>
                           </div>
                         </div>
                       </div>
