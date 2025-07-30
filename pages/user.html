@@ -77,14 +77,21 @@
                     <div class="flex-grow-1">
                       <div class="mb-4">
                         <img src="/assets/images/avatar.png" alt="user-image" class="rounded-circle me-3" />
-                        <button type="button" class="btn btn-outline-dark border align-bottom">
-                          <span class="material-icons-outlined align-bottom me-1"> file_upload </span>
-                          更新頭貼
-                        </button>
+                        <label class="btn border align-bottom " for="user-photo-upload"
+                          ><span class="material-icons-outlined align-bottom me-1"> file_upload </span>更新頭貼</label
+                        >
+                        <input type="file" name="user-photo-upload" id="user-photo-upload" class="d-none" />
                       </div>
                       <div class="mb-4">
                         <div class="form-floating mb-3">
-                          <input type="text" class="form-control" id="name" placeholder="姓名" value="Mokumaru" />
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            placeholder="姓名"
+                            value="Mokumaru"
+                            readonly
+                          />
                           <label for="name">姓名</label>
                         </div>
                       </div>
@@ -126,6 +133,7 @@
                             id="birthdate"
                             placeholder="生日"
                             value="2000-01-10"
+                            readonly
                           />
                           <label for="birthdate">生日</label>
                         </div>
@@ -190,10 +198,14 @@
                             id="email"
                             placeholder="信箱"
                             value="mokumaru@mail.com"
+                            aria-describedby="emailHelp"
+                            readonly
                           />
                           <label for="email">信箱</label>
                         </div>
-                        <p class="px-2">盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信</p>
+                        <div id="emailHelp" class="form-text px-2">
+                          盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信
+                        </div>
                       </div>
                       <div class="mb-4">
                         <div class="form-floating mb-3">
@@ -203,6 +215,7 @@
                             id="phone"
                             placeholder="連絡電話"
                             value="09-1234-5678"
+                            readonly
                           />
                           <label for="phone">連絡電話</label>
                         </div>
@@ -215,6 +228,7 @@
                             id="address"
                             placeholder="地址"
                             value="高雄市三民區九如一路 87 號"
+                            readonly
                           />
                           <label for="address">地址</label>
                         </div>
