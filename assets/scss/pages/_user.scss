@@ -28,3 +28,16 @@
 .form-text {
   color: #667f99;
 }
+
+.nav-pills .nav-link {
+  background: #fcfcfd; /* 透明背景 */
+  border: 1px solid #d1d9e1; /* secondary 邊框 */
+  color: #141a1f; /* secondary 文字 */
+  border-radius: 16px; /* 膠囊圓角 */
+  padding: 12px 20px;
+  transition: all 0.3s;
+  &.active {
+    background: #e0e5eb;
+    color: #141a1f;
+  }
+}
