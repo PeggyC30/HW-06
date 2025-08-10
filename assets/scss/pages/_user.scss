@@ -1,43 +1,45 @@
-.bg-gray {
-  background-color: #f0f3f5;
-}
-.section-padding {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-.round-panel {
-  background-color: #fcfcfd;
-  border-radius: 24px;
-}
-.text-blue {
-  color: #4a69e8;
-}
-.subtitle {
-  font-size: 18px;
-  color: #667f99;
-}
-.badge {
-  background-color: #fcfcfd;
-}
 .side-width {
   width: 300px;
 }
 .modal-width {
   max-width: 480px;
 }
-.form-text {
-  color: #667f99;
+// .nav-pills .nav-link {
+//   background: #fcfcfd;
+//   border: 1px solid #d1d9e1;
+//   color: #141a1f;
+//   border-radius: 16px;
+//   padding: 12px 20px;
+//   transition: all 0.3s;
+//   &.active {
+//     background: #e0e5eb;
+//     color: #141a1f;
+//   }
+// }
+.tab-btn-bg {
+  background-color: $white;
 }
 
-.nav-pills .nav-link {
-  background: #fcfcfd; /* 透明背景 */
-  border: 1px solid #d1d9e1; /* secondary 邊框 */
-  color: #141a1f; /* secondary 文字 */
-  border-radius: 16px; /* 膠囊圓角 */
-  padding: 12px 20px;
-  transition: all 0.3s;
-  &.active {
-    background: #e0e5eb;
-    color: #141a1f;
+.d-md-table-row-group {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .d-md-table-row-group {
+    display: table-row-group;
   }
+}
+.booking-form li div {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.booking-form li:nth-child(even) {
+  background-color: $natural-85;
+}
+
+.dropdown-item:hover {
+  background-color: $natural-90 !important; /* Bootstrap 主色藍 */
 }

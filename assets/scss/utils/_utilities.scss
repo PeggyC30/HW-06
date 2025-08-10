@@ -1,0 +1,63 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);
+$utilities: map-merge(
+  $utilities,
+  (
+    "display":
+      map-merge(
+        map-get($utilities, "display"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);
+$utilities: map-merge(
+  $utilities,
+  (
+    "width": (
+      property: width,
+      class: w,
+      values:
+        map-merge(
+          map-get(map-get($utilities, "width"), "values"),
+          (
+            815: 815px,
+            400: 400px,
+            320: 320px,
+            306: 306px,
+          )
+        ),
+      responsive: true,
+    ),
+  )
+);
+$utilities: map-merge(
+  $utilities,
+  (
+    "max-width": (
+      property: max-width,
+      class: max-w,
+      values:
+        map-merge(
+          map-get(map-get($utilities, "max-width"), "values"),
+          (
+            815: 815px,
+            400: 400px,
+            320: 320px,
+          )
+        ),
+      responsive: true,
+    ),
+  )
+);

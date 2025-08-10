@@ -1,0 +1,47 @@
+.btn {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  &:hover {
+    background-color: $secondary-50;
+    color: $black;
+    border: 1px solid $secondary-50;
+  }
+}
+.btn-secondary:hover {
+  background-color: $primary-60;
+  color: $white;
+  border: 1px solid $primary-60;
+}
+.btn-white:hover {
+  background-color: $natural-90;
+  color: $black;
+  border: 1px solid $natural-90;
+}
+
+.card-footer {
+  background-color: transparent; /* 取消背景 */
+  border-top: none; /* 可選：取消上邊框 */
+}
+.navbar-toggler:hover {
+  background-color: $natural-90;
+}
+.nav-link {
+  padding: 12px 24px !important;
+}
+.nav-pills .nav-link {
+  padding: 12px 12px !important;
+}
+@media (min-width: 768px) {
+  .nav-pills .nav-link {
+    padding: 12px 24px !important;
+  }
+}
+.nav-link:hover {
+  background-color: $natural-90;
+  border-radius: 16px;
+}
