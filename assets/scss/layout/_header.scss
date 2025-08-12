@@ -35,3 +35,40 @@
     flex-direction: column;
   }
 }
+.form-floating {
+  position: relative;
+}
+.form-floating .toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+  user-select: none;
+}
+.mb-142 {
+  margin-bottom: 142px;
+}
+.btn-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.modal-content {
+  overflow: hidden; /* 讓超過圓角的部分被裁掉 */
+}
+.bg-login {
+  background-image: url(/assets/images/about/login.png);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg-regis {
+  background-image: url(/assets/images/about/register.png);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

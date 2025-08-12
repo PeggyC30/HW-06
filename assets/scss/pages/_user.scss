@@ -1,5 +1,7 @@
-.side-width {
-  width: 300px;
+@media (min-width: 768px) {
+  .side-width {
+    width: 300px;
+  }
 }
 .modal-width {
   max-width: 480px;
@@ -39,7 +41,20 @@
 .booking-form li:nth-child(even) {
   background-color: $natural-85;
 }
+.booking-form li:hover {
+  background-color: $primary-90;
+}
 
+.table-hover tr:hover td {
+  background-color: $primary-90;
+}
 .dropdown-item:hover {
-  background-color: $natural-90 !important; /* Bootstrap 主色藍 */
+  background-color: $natural-90 !important;
+}
+.w-62 {
+  width: 62%;
+}
+.table td,
+th {
+  white-space: nowrap;
 }

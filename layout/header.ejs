@@ -1,9 +1,176 @@
 <nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
   <div class="container">
-    <a class="navbar-brand" href="#"><img src="/assets/images/logo.svg" alt="logo" /></a>
-    <a href="user.html" class="ms-auto d-lg-none me-3"
+    <a class="navbar-brand" href="index.html"><img src="/assets/images/logo.svg" alt="logo" /></a>
+    <a href="user.html" class="ms-auto d-lg-none me-3" id="userBtnMobile" style="display: none"
       ><img src="/assets/images/avatar.png" alt="user-image" class="rounded-circle border me-2 user-image" />Mokumaru</a
     >
+    <a
+      id="loginBtnMobile"
+      class="btn btn-white border py-2 px-5 ms-auto d-lg-none me-3"
+      data-bs-toggle="modal"
+      href="#exampleModalToggle"
+      role="button"
+      >登入/註冊</a
+    >
+    <div
+      class="modal fade"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen-xl-down">
+        <div class="modal-content">
+          <div class="modal-body ps-0 pt-0 pb-0 pe-0">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xl-7 d-none d-xl-block bg-login"></div>
+
+                <div class="col-xl-5 col-12">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="modal-header border-0 justify-content-center pt-6">
+                    <h5 class="modal-title fs-2 fw-bold" id="exampleModalToggleLabel">登入</h5>
+                  </div>
+                  <div class="mx-5">
+                    <div class="pb-5 border-bottom">
+                      <a
+                        href="#"
+                        class="btn btn-white border w-100 gap-1 d-flex align-items-center justify-content-center mb-4"
+                        ><img src="/assets/images/google.svg" alt="google" />Google</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-white border w-100 gap-1 d-flex align-items-center justify-content-center"
+                        ><img src="/assets/images/discord.svg" alt="dc" />Discord</a
+                      >
+                    </div>
+                    <div class="form-floating mb-4 mt-5">
+                      <input type="text" class="form-control" id="floatingInput-login" placeholder="帳號" />
+                      <label for="floatingInput-login">帳號</label>
+                    </div>
+                    <div class="form-floating mb-5">
+                      <input type="password" class="form-control" id="floatingPassword-login" placeholder="密碼" />
+                      <label for="floatingPassword-login">密碼</label>
+                      <span class="material-icons-outlined toggle-password" id="togglePassword-login">visibility</span>
+                    </div>
+                    <a href="#" class="fs-7 text-natural-50 text-end mb-4 w-100">忘記密碼</a>
+                    <!-- <a
+                      id="loginSubmitBtn"
+                      href="user.html"
+                      class="btn btn-dark w-100 d-flex align-items-center justify-content-center mb-6"
+                      >送出 <span class="material-icons-outlined"> chevron_right </span></a
+                    > -->
+                    <button
+                      id="loginSubmitBtn"
+                      type="button"
+                      class="btn btn-dark w-100 d-flex align-items-center justify-content-center mb-6"
+                    >
+                      送出 <span class="material-icons-outlined"> chevron_right </span>
+                    </button>
+                    <div class="modal-footer border-0 d-flex align-items-center justify-content-center mb-142">
+                      <span class="text-natural-50"
+                        >不是會員？
+                        <a href="" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" class="text-primary-60"
+                          >快速註冊</a
+                        >
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalToggle2"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabe2"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen-xl-down">
+        <div class="modal-content">
+          <div class="modal-body ps-0 pt-0 pb-0 pe-0">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xl-5 col-12">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="modal-header border-0 justify-content-center pt-6">
+                    <h5 class="modal-title fs-2 fw-bold" id="exampleModalToggleLabel2">註冊</h5>
+                  </div>
+                  <div class="mx-5">
+                    <div class="pb-5 border-bottom">
+                      <a
+                        href="#"
+                        class="btn btn-white border w-100 gap-1 d-flex align-items-center justify-content-center mb-4"
+                        ><img src="/assets/images/google.svg" alt="google" />Google</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-white border w-100 gap-1 d-flex align-items-center justify-content-center"
+                        ><img src="/assets/images/discord.svg" alt="dc" />Discord</a
+                      >
+                    </div>
+                    <div class="form-floating mb-4 mt-5">
+                      <input type="text" class="form-control" id="floatingInput-regis" placeholder="帳號" />
+                      <label for="floatingInput-regis">帳號</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                      <input type="password" class="form-control" id="floatingPassword-regis" placeholder="密碼" />
+                      <label for="floatingPassword-regis">密碼</label>
+                      <span class="material-icons-outlined toggle-password" id="togglePassword-regis">visibility</span>
+                    </div>
+                    <div class="form-floating mb-4">
+                      <input type="password" class="form-control" id="floatingPassword-regis-2" placeholder="密碼" />
+                      <label for="floatingPassword-regis-2">密碼</label>
+                      <span class="material-icons-outlined toggle-password" id="togglePassword-regis">visibility</span>
+                    </div>
+                    <div class="form-floating mb-4">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="floatingPassword-regis-comfirm"
+                        placeholder="密碼"
+                      />
+                      <label for="floatingPassword-regis-comfirm">確認密碼</label>
+                      <span class="material-icons-outlined toggle-password" id="togglePassword-regis">visibility</span>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                      <label class="form-check-label fs-7 mb-4" for="flexCheckDefault">
+                        我同意 <a href="#" class="text-primary-60">服務條款</a> 和
+                        <a href="#" class="text-primary-60">隱私政策</a>
+                      </label>
+                    </div>
+                    <a href="user.html" class="btn btn-dark w-100 d-flex align-items-center justify-content-center mb-6"
+                      >送出 <span class="material-icons-outlined"> chevron_right </span></a
+                    >
+                    <!-- <button
+                      type="button"
+                      class="btn btn-dark w-100 d-flex align-items-center justify-content-center mb-6"
+                    >
+                      送出 <span class="material-icons-outlined"> chevron_right </span>
+                    </button> -->
+                    <div class="modal-footer border-0 d-flex align-items-center justify-content-center mb-142">
+                      <span class="text-natural-50"
+                        >已經會員？
+                        <a href="" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" class="text-primary-60"
+                          >直接登入</a
+                        >
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-7 d-none d-xl-block bg-regis"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <button
       class="navbar-toggler border-0"
       type="button"
@@ -24,6 +191,7 @@
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav-header"
         ></button>
+
         <ul class="navbar-nav mx-auto mb-lg-0 text-center gap-5 gap-lg-3">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">服務方案</a>
@@ -44,8 +212,54 @@
         </button>
       </div>
     </div>
-    <a href="user.html" class="ms-auto d-none d-lg-block"
+    <a href="user.html" class="ms-auto d-none" id="userBtnDesktop" style="display: none"
       ><img src="/assets/images/avatar.png" alt="user-image" class="rounded-circle border me-2 user-image" />Mokumaru</a
+    >
+    <a
+      id="loginBtnDesktop"
+      class="btn btn-white border py-2 px-5 ms-auto d-none d-lg-block"
+      data-bs-toggle="modal"
+      href="#exampleModalToggle"
+      role="button"
+      >登入/註冊</a
     >
   </div>
 </nav>
+
+<script>
+  const togglePasswordLogin = document.getElementById("togglePassword-login");
+  const passwordInputLogin = document.getElementById("floatingPassword-login");
+  const togglePasswordRegis = document.getElementById("togglePassword-regis");
+  const passwordInputRegis = document.getElementById("floatingPassword-regis");
+
+  togglePasswordLogin.addEventListener("click", () => {
+    const type = passwordInputLogin.getAttribute("type") === "password" ? "text" : "password";
+    passwordInputLogin.setAttribute("type", type);
+
+    togglePasswordLogin.textContent = type === "password" ? "visibility" : "visibility_off";
+  });
+
+  function onLoginSuccess() {
+    // 桌面版
+    document.getElementById("loginBtnDesktop").style.display = "none";
+    document.getElementById("userBtnDesktop").style.display = "block";
+    document.getElementById("loginBtnDesktop").classList.add("d-none");
+    document.getElementById("loginBtnDesktop").classList.remove("d-lg-block");
+    document.getElementById("userBtnDesktop").classList.remove("d-lg-none");
+    document.getElementById("userBtnDesktop").classList.add("d-lg-block");
+    // 手機版
+    document.getElementById("loginBtnMobile").style.display = "none";
+    document.getElementById("userBtnMobile").style.display = "block"; // 或 'block' 依需求
+  }
+
+  document.getElementById("loginSubmitBtn").addEventListener("click", function (e) {
+    e.preventDefault();
+
+    onLoginSuccess();
+    localStorage.setItem("isLoggedIn", "true");
+    localStorage.setItem("username", "Mokumaru");
+
+    // 然後跳轉頁面
+    // window.location.href = "user.html";
+  });
+</script>
